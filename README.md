@@ -1,40 +1,43 @@
-Sistema de Gestão - Java e JDBC (Prova nr1)
-Sistema backend para controle de pessoas, funcionários e projetos usando Java e JDBC com MySQL. Este projeto visa demonstrar a integração entre Java e um banco de dados MySQL por meio de operações básicas de CRUD.
+# 🚀 Sistema de Gestão - Java e JDBC
 
-O que você vai precisar
-Java JDK 11 ou versão superior
+Este projeto é uma aplicação backend desenvolvida em Java com JDBC para gerenciar pessoas, funcionários e projetos utilizando um banco de dados MySQL. Ideal para quem está aprendendo a integração entre Java e banco de dados.
 
-MySQL rodando localmente ou em servidor
+## 📝 Requisitos
 
-MySQL Connector/J (driver JDBC)
+Antes de começar, você vai precisar ter os seguintes requisitos instalados:
 
-Preparando o ambiente
-Banco de Dados
-Crie o banco de dados chamado provaDB no MySQL.
+- **Java JDK 11 ou versão superior**
+- **MySQL Server**
+- **MySQL Connector/J (driver JDBC)**
 
-Caso tenha um arquivo .sql, basta importá-lo para gerar as tabelas e inserir dados de exemplo.
+## ⚙️ Configuração
 
-Configuração da Conexão
-Abra o arquivo src/br/com/empresa/util/Conexao.java.
+### Banco de Dados 🗄️
 
-Verifique e ajuste as informações de conexão com o banco:
+1. Crie um banco de dados chamado "provaDB" no MySQL.
+2. Importe o arquivo "empresa.sql" para popular o banco de dados com as tabelas e dados de exemplo.
 
-URL: jdbc:mysql://localhost:3306/provaDB
+### Configuração de Conexão 🔌
 
-Usuário: root
+1. Abra o arquivo "src/br/com/joao_prova/util/Conexao.java".
+2. Verifique as configurações de conexão:
+    - **URL**: "jdbc:mysql://localhost:3306/provaDB"
+    - **Usuário**: "root"
+    - **Senha**: ""
 
-Senha: (deixe em branco)
+### Adicionando o Driver JDBC 📦
 
-Instalando o Driver JDBC
-Baixe o MySQL Connector/J (driver JDBC) no site oficial.
+1. Baixe o **MySQL Connector/J** no site oficial.
+2. No IntelliJ, adicione o arquivo `.jar` como dependência:
+    - Vá em `File > Project Structure > Modules > Dependencies`.
+    - Clique em `+` e escolha `JARs or Directories` para adicionar o arquivo JAR.
 
-Adicione o arquivo .jar como dependência no IntelliJ:
+## 🚀 Executando o Projeto
 
-Vá em File > Project Structure > Modules > Dependencies.
+Para rodar o projeto, basta seguir os passos abaixo:
 
-Clique no ícone de + e escolha JARs or Directories para incluir o arquivo JAR.
-
-Como rodar o projeto
-Execute o método main da classe src/br/com/empresa/app/App.java.
-
-Os resultados dos testes aparecerão no console, incluindo as operações de CRUD feitas no banco de dados, como inserção, leitura, atualização e exclusão.
+1. Execute o método "main" da classe "src/br/com/empresa/app/App.java".
+2. O console mostrará os resultados dos testes, que incluem as operações de:
+   - Inserção de pessoas
+   - Manipulação de dados de funcionários
+   - Gerenciamento de projetos
